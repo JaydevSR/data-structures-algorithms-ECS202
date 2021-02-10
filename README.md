@@ -1,1 +1,4 @@
-# data-structures-algorithms-ECS202
+# Data Structures and Algorithms - ECS202
+
+## Links to Psuedocodes
+
