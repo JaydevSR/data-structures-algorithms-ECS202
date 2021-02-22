@@ -185,11 +185,16 @@ Based on Divide-and-Conquer.
         low = Pop(lowers)
         high = Pop(uppers)
         loc = Quicksub(A, low, high)
-        if (loc = low or loc = high)
-            continue
-        else
+        if (loc != low)
             Push(lowers, low)
             Push(uppers, loc - 1)
+        if (loc != high)
             Push(lowers, loc + 1)
             Push(uppers, high)
 ```
+
+### Time complexity
+
+1. Worst Case: When the list is already sorted. The algorithm required (n - i) comparisons to confirm that i'th element is at its correct position. So, the time complexity is O(n^2)
+
+2. Average Case: At the k'th division of sublists, 2^(k-1) elements are correctly placed. So, there are log2(n) reductions. So, as each reduction makes atmost n comparisons then, the time complexity is O(n log n)
