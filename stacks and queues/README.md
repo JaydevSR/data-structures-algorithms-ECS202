@@ -84,7 +84,7 @@ An element can be inserted of deleted at only one end of this linear DS, i.e, *t
 
 ## Applications
 
-### Polish notation *(Arithmatic expressions)*
+### Polish notation *(Arithmetic expressions)*
 
 #### *Examples*
 
