@@ -134,7 +134,11 @@ Based on Divide-and-Conquer.
     9. If length of any of the lists is one then it is correctly sorted.
     10. Repeat this subroutine for the lists which have lenght greater than 1.
 
-    Implementation: Maintain two stacks, lower and upper. the stack lower consists of the lower indices of sublists and the stack upper consists of upper indices of the sublists. Once a sublist is futher divided then we add then we push the lower and upper indices of the new sublists onto these stacks and after that we pop the indices from these stacks and perform the quicksort subroutine on the list consisting of these indices. We keep performing this routine till both the stacks are empty.
+    Implementation: Maintain two stacks, lower and upper.  
+    The stack lower consists of the lower indices of sublists and the stack upper consists of upper indices of the sublists.  
+    Once a sublist is futher divided then we add then we push the lower and upper indices of the new sublists onto these stacks   
+    and after that we pop the indices from these stacks and perform the quicksort subroutine on the list consisting of these indices.  
+    We keep performing this routine till both the stacks are empty.
 
 ```
 
