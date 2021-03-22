@@ -110,6 +110,48 @@ Prefix: (2 * (3 + 4)) / 5 <=> (2 * [+ 3 4]) / 5 <=> [* 2 + 3 4] / 5 <=> / * 2 + 
 
 > *FIFO*: First in first out
 
+### Representations
+
+1. Array (Is static, has drawbacks)
+2. Linked List
+
+## Operations
+
+### Enqueue
+---
+
+```c
+
+    => Enqueue(Q, X) // Array Representation
+
+    if (Q.tail + 1 == Q.head)
+        ERROR: Overflow
+    else
+        Q[Q.tail] = X
+        if (Q.tail = Q.length)
+            Q.tail = 1
+        else
+            Q.tail = Q.tail + 1
+
+```
+
+### Dequeue
+---
+
+```c
+
+    => Dequeue(Q) // Array Representation
+
+    if (Q.head == Q.tail)
+        ERROR: Underflow
+    else
+        X = Q[Q.head]
+        if (Q.head == Q.length)
+            Q.head = 1
+        else
+            Q.head = Q.head + 1
+
+```
 
 # Algorithms Using Stacks
 
