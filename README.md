@@ -5,4 +5,4 @@
 ### [Arrays](./arrays)
 ### [Linked Lists](./linked-lists)
 ### [Recursion](./recursion)
-### [Stacks and Queues](./stacks and queues)
+### [Stacks and Queues](./stacks\ and\ queues)
