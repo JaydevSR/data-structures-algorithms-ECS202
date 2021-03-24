@@ -124,7 +124,7 @@ Prefix: (2 * (3 + 4)) / 5 <=> (2 * [+ 3 4]) / 5 <=> [* 2 + 3 4] / 5 <=> / * 2 + 
 
     => Enqueue(Q, X) // Array Representation
 
-    if (Q.tail + 1 == Q.head)
+    if ((Q.tail + 1) mod Q.length == Q.head)
         ERROR: Overflow
     else
         Q[Q.tail] = X
