@@ -36,15 +36,18 @@ int main()
 
 void insertionsort(int *arr, int start, int end)
 {
-    int low = start, high = start, temp;
-    for (int i=start + 1; i<=end; i++)
+    int i = start + 1, j, temp;
+    while (i <= end)
     {
-        int temp = arr[i];
-        for (int j = i-1; j>=start && arr[j] > temp; j--)
+        temp = arr[i];
+        j = i-1;
+        while (j>=start && arr[j] > temp)
         {
             arr[j+1] = arr[j];
-            arr[j] = temp;
+            j--;
         }
+        arr[j+1]=temp;
+        i++;
     }
 }
 
